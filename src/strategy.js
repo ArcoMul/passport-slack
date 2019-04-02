@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import OAuth2Strategy from 'passport-oauth2';
 import defaults from 'lodash.defaults';
 import pickBy from 'lodash.pickby';
@@ -176,8 +175,8 @@ class SlackStrategy extends OAuth2Strategy {
     return pickBy(defaults({
       team: options.team,
     }, {
-      team: this.slackAuthOptions.team,
-    }));
+        team: this.slackAuthOptions.team,
+      }));
   }
 
   /**
