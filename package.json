@@ -11,8 +11,7 @@
   },
   "scripts": {
     "build": "babel src -d dist",
-    "docs": "esdoc -c ./esdoc.json",
-    "prepare": "npm run build"
+    "docs": "esdoc -c ./esdoc.json"
   },
   "dependencies": {
     "lodash.defaults": "^4.2.0",
